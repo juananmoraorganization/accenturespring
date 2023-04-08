@@ -1,0 +1,8 @@
+site_name: "accenture-springone"
+site_description: "add 2 integers in java with"
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
