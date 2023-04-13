@@ -6,11 +6,10 @@
     "baseBranches": []
   },
   "scanSettingsSAST": {
-    "enableScan": false,
-    "scanPullRequests": false,
-    "incrementalScan": true,
-    "baseBranches": [],
-    "snippetSize": 10
+    "enableScan": true,
+    "scanPullRequests": true,
+    "incrementalScan": false,
+    "baseBranches": ["integration"]
   },
   "checkRunSettings": {
     "vulnerableCheckRunConclusionLevel": "failure",
