@@ -39,7 +39,7 @@ jobs:
       - name: Deploy Development
         run: echo app deployed en dev
      
-  deploymemt:
+  deployment:
     needs: deploydev
     runs-on: ubuntu-latest
     steps:
