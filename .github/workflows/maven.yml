@@ -35,7 +35,7 @@ jobs:
   deployment:
     needs: build
     runs-on: ubuntu-latest
-    environment:dev
+    environment: dev
     steps:
       - name: Deploy Development
         run: echo app deployed en dev
@@ -43,7 +43,7 @@ jobs:
   deployment2:
     needs: deploydev
     runs-on: ubuntu-latest
-    environment:qa
+    environment: qa
     steps:
       - name: Deploy PRE
         run: echo app deployed en PRE
