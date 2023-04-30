@@ -41,7 +41,7 @@ jobs:
         run: echo app deployed en dev
      
   deployment2:
-    needs: deploydev
+    needs: deployment
     runs-on: ubuntu-latest
     environment: qa
     steps:
@@ -49,7 +49,7 @@ jobs:
         run: echo app deployed en PRE
 
   deployment3:
-    needs: deploypre
+    needs: deployment2
     runs-on: ubuntu-latest
     environment: prd
     steps:
