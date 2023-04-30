@@ -32,21 +32,21 @@ jobs:
     - name: Build & Publish Image
       run: echo Build Image   
 
-  deploydev:
+  deployment:
     needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Deploy Development
         run: echo app deployed en dev
      
-  deploypre:
+  deploymemt:
     needs: deploydev
     runs-on: ubuntu-latest
     steps:
       - name: Deploy PRE
         run: echo app deployed en PRE
 
-  deploypro:
+  deployment:
     needs: deploypre
     runs-on: ubuntu-latest
     steps:
