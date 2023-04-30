@@ -1,4 +1,4 @@
 # accenture-springone
 
-add 2 integers in java with java
+add 2 integers in java with java deploy 2
 
