@@ -43,7 +43,7 @@ jobs:
   deployment2:
     needs: deployment
     runs-on: ubuntu-latest
-    environment: qa
+    environment: preprod
     steps:
       - name: Deploy PRE
         run: echo app deployed en PRE
