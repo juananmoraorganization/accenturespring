@@ -58,7 +58,6 @@ jobs:
   mend-sast:
      runs-on: ubuntu-latest
      env:
-       MEND_SAST_ORGANIZATION: "Accenture Spain"
        MEND_SAST_API_TOKEN: e8240a7cc63e08109ce064d5b3f3dadf60c8d107a613061f727adc25d700a2c6
        MEND_SAST_SERVER_URL:  https://saas-eu.mend.io/sast
      steps:
