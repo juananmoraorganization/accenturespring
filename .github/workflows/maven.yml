@@ -55,18 +55,4 @@ jobs:
     steps:
       - name: Deploy PRO
         run: echo app deployed en PRO
-  mend-sast:
-     runs-on: ubuntu-latest
-     env:
-       MEND_SAST_API_TOKEN: e8240a7cc63e08109ce064d5b3f3dadf60c8d107a613061f727adc25d700a2c6
-       MEND_SAST_SERVER_URL:  https://saas-eu.mend.io/sast
-     steps:
-       - name: Checkout repository
-         uses: actions/checkout@v2
-       # Download CLI
-       - name: Download CLI
-         run: curl -LJO https://downloads-sast.mend.io/sast-cli/linux/mendsastcli && chmod +x mendsastcli
-       # Run CLI
-       - name: Run Mend-SAST
-         run: ./mendsastcli --dir ./ --name=${{github.event.repository.name}}-${{github.ref_name}}-${{github.sha}} --app=${{github.event.repository.name}} --baseline=true        
-  
+ 
